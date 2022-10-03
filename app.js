@@ -5,7 +5,8 @@ const app = Vue.createApp({
         return {
             title: "Jatin Yadav",
             age: 21,
-            area: "New Delhi"
+            area: "New Delhi",
+            heading: "I am Jatin Yadav"
         }
     }
 })
