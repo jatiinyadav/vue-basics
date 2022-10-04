@@ -20,6 +20,11 @@
         <h1>{{ title }} -- {{ age }} -- {{ area }}</h1>
 
         <h1>{{ heading }}</h1>
+
+        <ul>
+            <li v-for="item in items" >{{ item.label}}</li>
+        </ul>
+
         <input v-model="heading">
     </div>
 
