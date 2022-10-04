@@ -3,10 +3,11 @@ const app = Vue.createApp({
     // template: '<h1>Hello Wolrdd</h1>'
     data() {
         return {
-            title: "Jatin Yadav",
+            title: "Vue Basics",
             age: 21,
             area: "New Delhi",
-            heading: "I am Jatin Yadav"
+            heading: "Vue School Learning",
+            items: [{id: 1, label :"Item1"}, {id: 2, label: "Item2"}, {id: 3, label: "Item3"}]
         }
     }
 })
