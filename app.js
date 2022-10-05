@@ -6,7 +6,10 @@ const app = Vue.createApp({
             title: "Vue Basics",
             age: 21,
             area: "New Delhi",
-            heading: "Vue School Learning",
+            heading: "",
+            headingTrim:"",
+            headingLazy: "",
+            headingNumber: "",
             items: [{id: 1, label :"Item1"}, {id: 2, label: "Item2"}, {id: 3, label: "Item3"}]
         }
     }
