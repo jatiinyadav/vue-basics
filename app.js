@@ -9,6 +9,7 @@ const app = Vue.createApp({
             heading: "",
             headingTrim:"",
             headingLazy: "",
+            itemArray: [],
             headingNumber: "",
             items: [{id: 1, label :"Item1"}, {id: 2, label: "Item2"}, {id: 3, label: "Item3"}]
         }
