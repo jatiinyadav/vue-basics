@@ -19,7 +19,7 @@
     <div id="app">
         <h1>{{ title }} -- {{ age }} -- {{ area }}</h1>
 
-        <!-- V-model modifiers -->
+        <!-- V-model modifiers --> 
 
         <!-- Basic -->
         <input v-model="heading" placeholder="Write Something..">
@@ -35,15 +35,25 @@
         <input v-model.lazy="headingLazy" placeholder="Write Something..">
         <h1>{{ headingLazy }}</h1>
         
-        <!-- Number -->
-        <h2>Heading Number</h2>
-        <input v-model.number="headingNumber" placeholder="Write Something..">
-        <h1>{{ headingNumber }}</h1>
-        
         <ul>
             <li v-for="item in items" :key="item.id" >{{ item.label }}</li>
         </ul>
 
+        
+        <!-- Adding Elements in an Array -->
+        <h1>Adding elements in an Array</h1>
+        <h3>Select Ice cream Flavours</h3>
+
+        <label><input type="checkbox" v-model="itemArray" value="Vanilla">Vanilla</label> &nbsp;
+        <label><input type="checkbox" v-model="itemArray" value="Strawberry">Strawberry</label> &nbsp;
+        <label><input type="checkbox" v-model="itemArray" value="Chocolate">Chocolate</label> &nbsp;
+        <label><input type="checkbox" v-model="itemArray" value="Butterscotch">Butterscotch</label> &nbsp;
+    
+        <ul>
+            <li v-for="item in itemArray"> {{ item }} </li>
+        </ul>
+
+        <br><br><br><br><br><br>
     </div>
 
 </body>
