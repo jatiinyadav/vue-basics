@@ -1,4 +1,8 @@
-
+body {
+  background-color: #170f1e;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
 .footer-basic {
   padding: 40px 0;
   background-color: #ffffff;
