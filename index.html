@@ -24,17 +24,9 @@
         <!-- Basic -->
         <input v-model="heading" placeholder="Write Something..">
         <h1>{{ heading }}</h1>
-
-        <!-- Trim -->
-        <h2>Heading Trim</h2>
-        <input v-model.trim="headingTrim" placeholder="Write Something..">
-        <h1>{{ headingTrim }}</h1>
         
-        <!-- Lazy -->
-        <h2>Heading Lazy</h2>
-        <input v-model.lazy="headingLazy" placeholder="Write Something..">
-        <h1>{{ headingLazy }}</h1>
-        
+        <!-- Using v-for and binding key -->
+        <h1>Iterating over an array</h1>
         <ul>
             <li v-for="item in items" :key="item.id" >{{ item.label }}</li>
         </ul>
