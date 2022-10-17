@@ -8,18 +8,14 @@
     <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
     <script src="./app.js" defer></script>
     <link rel="stylesheet" href="./main.css">
-    <title>Practicing Vue</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/vue-js.png">
+    <title>Vue Basics</title>
 </head>
 
 <body>
-    <h1>
-        Hello World
-    </h1> 
 
     <div id="app">
-        <h1>{{ title }} -- {{ age }} -- {{ area }}</h1>
-
-        <!-- V-model modifiers --> 
+        <h1>{{ title }}</h1>
 
         <!-- Basic -->
         <input v-model="heading" placeholder="Write Something..">
@@ -45,7 +41,7 @@
             <li v-for="item in itemArray"> {{ item }} </li>
         </ul>
 
-        <br><br><br><br><br><br>
+        
     </div>
 
 </body>

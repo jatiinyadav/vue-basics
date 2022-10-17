@@ -4,8 +4,6 @@ const app = Vue.createApp({
     data() {
         return {
             title: "Vue Basics",
-            age: 21,
-            area: "New Delhi",
             heading: "",
             headingTrim:"",
             headingLazy: "",
