@@ -10,3 +10,19 @@ ul{
   justify-content: space-evenly;
   margin: auto;
 }
+
+button{
+    background-color: #2f2f2f;
+    transition: background-color .5s;
+    padding: 5px 12px;
+    border: 1px solid rgba(84, 84, 84, .65);
+    border-radius: 8px;
+    font-size: .9em;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+  border: 1px solid white;
+}
