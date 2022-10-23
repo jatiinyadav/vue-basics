@@ -12,6 +12,11 @@ const app = Vue.createApp({
             items: [{id: 1, label :"Item1"}, {id: 2, label: "Item2"}, {id: 3, label: "Item3"}],
             awesome: true,
             count: 0,
+            myObject: {
+                Title: 'How to do lists in Vue',
+                Author: 'Jatin Yadav',
+                PublishedAt: '2022-10-23'
+              }
         }
     }
 })
