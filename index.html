@@ -55,7 +55,15 @@
 
         <button @click="count++">Add +1</button>
         <p>Count is: {{ count }}</p>
+        
+        <!-- Using v-for with an Object -->
+        <h1>List Rendering with Object</h1>
 
+        <ul>
+            <li v-for="(value, key, index) in myObject">
+              {{ index }}. {{ key }}: {{ value }}
+            </li>
+        </ul>
     </div>
 
 </body>

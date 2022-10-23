@@ -7,8 +7,13 @@ body {
 
 ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
+}
+
+li{
+  margin: 8px;
 }
 
 button{
