@@ -43,12 +43,18 @@
             <li v-for="item in itemArray"> {{ item }} </li>
         </ul>
 
-        <br>
-
+        <!-- Using v-ifelse for conditional rendering -->
+        <h1>Conditional Rendering</h1>
         <button @click="awesome = !awesome">Toggle Button</button>
 
-        <h1 v-if="awesome">Vue is awesome!</h1>
-        <h1 v-else>Oh no 😢</h1>
+        <h4 v-if="awesome">Vue is awesome!</h4>
+        <h4 v-else>Oh no 😢</h4>
+
+        <!-- Using @click for event handling -->
+        <h1>Event Handling</h1>
+
+        <button @click="count++">Add +1</button>
+        <p>Count is: {{ count }}</p>
 
     </div>
 
