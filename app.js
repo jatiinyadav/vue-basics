@@ -21,7 +21,7 @@ const app = Vue.createApp({
         Author: "Jatin Yadav",
         PublishedAt: "2022-10-23",
       },
-      typed: new Typed(".mouse", {
+      typed: new Typed(".typed", {
         strings: [
           "Welcome to Vue Basics",
           "Create your own PR's",
