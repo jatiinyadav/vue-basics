@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
     <script src="./app.js" defer></script>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="icon" href="https://img.icons8.com/color/48/000000/vue-js.png">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/vue-js.png" />
+
     <title>Vue Basics</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
+    <h2><span class="mouse"></span></h2>
     <div id="app">
-        <h1>{{ title }}</h1>
+      <h1>{{ title }}</h1>
 
-        <!-- Basic -->
-        <input v-model="heading" placeholder="Write Something..">
-        <h1>{{ heading }}</h1>
+      <!-- Basic -->
+      <input v-model="heading" placeholder="Write Something.." />
+      <h1>{{ heading }}</h1>
 
-        <!-- Using v-for and binding key -->
-        <h1>Iterating over an array</h1>
-        <ul>
-            <li v-for="item in items" :key="item.id">{{ item.label }}</li>
-        </ul>
+      <!-- Using v-for and binding key -->
+      <h1>Iterating over an array</h1>
+      <ul>
+        <li v-for="item in items" :key="item.id">{{ item.label }}</li>
+      </ul>
 
+      <!-- Adding Elements in an Array -->
+      <h1>Adding elements in an Array</h1>
+      <h3>Select Ice cream Flavours</h3>
 
-        <!-- Adding Elements in an Array -->
-        <h1>Adding elements in an Array</h1>
-        <h3>Select Ice cream Flavours</h3>
+      <label
+        ><input
+          type="checkbox"
+          v-model="itemArray"
+          value="Vanilla"
+        />Vanilla</label
+      >
+      &nbsp;
+      <label
+        ><input
+          type="checkbox"
+          v-model="itemArray"
+          value="Strawberry"
+        />Strawberry</label
+      >
+      &nbsp;
+      <label
+        ><input
+          type="checkbox"
+          v-model="itemArray"
+          value="Chocolate"
+        />Chocolate</label
+      >
+      &nbsp;
+      <label
+        ><input
+          type="checkbox"
+          v-model="itemArray"
+          value="Butterscotch"
+        />Butterscotch</label
+      >
+      &nbsp;
 
-        <label><input type="checkbox" v-model="itemArray" value="Vanilla">Vanilla</label> &nbsp;
-        <label><input type="checkbox" v-model="itemArray" value="Strawberry">Strawberry</label> &nbsp;
-        <label><input type="checkbox" v-model="itemArray" value="Chocolate">Chocolate</label> &nbsp;
-        <label><input type="checkbox" v-model="itemArray" value="Butterscotch">Butterscotch</label> &nbsp;
+      <br />
 
-        <br>
+      <ul>
+        <li v-for="item in itemArray">{{ item }}</li>
+      </ul>
 
-        <ul>
-            <li v-for="item in itemArray"> {{ item }} </li>
-        </ul>
+      <!-- Using v-ifelse for conditional rendering -->
+      <h1>Conditional Rendering</h1>
+      <button @click="awesome = !awesome">Toggle Button</button>
 
-        <!-- Using v-ifelse for conditional rendering -->
-        <h1>Conditional Rendering</h1>
-        <button @click="awesome = !awesome">Toggle Button</button>
+      <h4 v-if="awesome">Vue is awesome!</h4>
+      <h4 v-else>Oh no 😢</h4>
 
-        <h4 v-if="awesome">Vue is awesome!</h4>
-        <h4 v-else>Oh no 😢</h4>
+      <!-- Using @click for event handling -->
+      <h1>Event Handling</h1>
 
-        <!-- Using @click for event handling -->
-        <h1>Event Handling</h1>
+      <button @click="count++">Add +1</button>
+      <p>Count is: {{ count }}</p>
 
-        <button @click="count++">Add +1</button>
-        <p>Count is: {{ count }}</p>
-        
-        <!-- Using v-for with an Object -->
-        <h1>List Rendering with Object</h1>
+      <!-- Using v-for with an Object -->
+      <h1>List Rendering with Object</h1>
 
-        <ul>
-            <li v-for="(value, key, index) in myObject">
-              {{ index }}. {{ key }}: {{ value }}
-            </li>
-        </ul>
+      <ul>
+        <li v-for="(value, key, index) in myObject">
+          {{ index }}. {{ key }}: {{ value }}
+        </li>
+      </ul>
+
     </div>
-
-</body>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+  </body>
 </html>
