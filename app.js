@@ -21,7 +21,7 @@ const app = Vue.createApp({
         Author: "Jatin Yadav",
         PublishedAt: "2022-10-23",
       },
-      typed: new Typed(".mouse", {
+      typed: new Typed(".typed", {
         strings: [
           "Welcome to Vue Basics",
           "Create your own PR's",
@@ -29,6 +29,15 @@ const app = Vue.createApp({
         ],
         typeSpeed: 40,
         backSpeed: 40,
+        fadeOut: true,
+        loop: true,
+      }),
+      typedBulk: new Typed(".typedBulk", {
+        strings: [
+          "npm install^1000\n <br> `installing components...` ^1000\n <br> `Fetching from source...`",
+        ],
+        typeSpeed: 40,
+        backSpeed: 0,
         fadeOut: true,
         loop: true,
       }),
