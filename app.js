@@ -32,6 +32,15 @@ const app = Vue.createApp({
         fadeOut: true,
         loop: true,
       }),
+      typedBulk: new Typed(".typedBulk", {
+        strings: [
+          "npm install^1000\n <br> `installing components...` ^1000\n <br> `Fetching from source...`",
+        ],
+        typeSpeed: 40,
+        backSpeed: 0,
+        fadeOut: true,
+        loop: true,
+      }),
     };
   },
 });
